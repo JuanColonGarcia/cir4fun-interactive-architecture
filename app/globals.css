@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+html, body { min-height: 100%; margin: 0; }
+body { font-family: Arial, Helvetica, sans-serif; }
+.diagram-scroll { width: 100%; overflow: auto; background: #fff; }
+.diagram-stage { position: relative; width: 100%; min-width: 680px; transform-origin: top left; transition: transform .18s ease; }
+.diagram-image { display: block; width: 100%; height: auto; user-select: none; pointer-events: none; }
+.hotspot { position: absolute; z-index: 3; border: 1.5px solid transparent; border-radius: 7px; background: rgba(255,255,255,0); cursor: pointer; transition: background .15s ease, border-color .15s ease, box-shadow .15s ease; }
+.hotspot:hover, .hotspot:focus-visible { background: rgba(255,255,255,.13); border-color: rgba(19,104,174,.9); box-shadow: 0 0 0 2px rgba(19,104,174,.2); outline: none; }
+.hotspot-active { background: rgba(20,105,176,.18); border: 2px solid #1469b0; box-shadow: 0 0 0 3px rgba(20,105,176,.2); }
+@media (max-width: 1279px) { .diagram-stage { min-width: 760px; } }
