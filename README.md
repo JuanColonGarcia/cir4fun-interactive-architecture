@@ -1,9 +1,8 @@
 # CIR4FUN Interactive Architecture
 
-Static single-page website based on the exact architecture image supplied by the user. Transparent clickable regions are positioned over the original diagram. Each region opens a component description and a direct link to its Canva presentation.
+Static interactive website based on the exact architecture image supplied by the user. Transparent clickable regions sit over the original diagram. Clicking a component opens a **left-side information drawer** with its work package, title, description and a button to open its corresponding Canva page in a new tab.
 
-## Canva display note
-Canva blocks embedded display in third-party websites for these supplied links (`ERR_BLOCKED_BY_RESPONSE`). Therefore the site does not use an iframe. It displays the description and opens the original Canva design in a new tab using the supplied URL.
+Canva blocks embedding in third-party websites for these links, so the site intentionally opens Canva externally instead of showing a broken iframe.
 
 ## Run locally
 Open `index.html` in a browser. No dependencies or build step.
