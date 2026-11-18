@@ -1,11 +1,11 @@
-# CIR4FUN Interactive Architecture
+# CIR4FUN Interactive Technology Architecture
 
-Static interactive website based on the exact architecture image supplied by the user. Transparent clickable regions sit over the original diagram. Clicking a component opens a **left-side information drawer** with its work package, title, description and a button to open its corresponding Canva page in a new tab.
+Static interactive website based on the supplied CIR4FUN architecture image. The layout follows the reference example: the architecture map is on the left and a structured component information panel is on the right.
 
-Canva blocks embedding in third-party websites for these links, so the site intentionally opens Canva externally instead of showing a broken iframe.
+Selecting a component displays its Work Package, description, main functions and a direct Canva link. Canva opens in a new tab because the provider blocks embedding in third-party websites.
 
 ## Run locally
-Open `index.html` in a browser. No dependencies or build step.
+Open `index.html` in a browser. No dependencies or build step required.
 
 ## Deploy to Vercel
-Push this folder to GitHub and import it in Vercel. Choose **Other**, leave Build Command and Install Command empty, and set Output Directory to `.`.
+Use Framework Preset **Other**, leave Build Command and Install Command empty, and set Output Directory to `.`.
