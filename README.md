@@ -1,15 +1,35 @@
-# CIR4FUN Interactive Architecture
+# CIR4FUN Interactive Technology Architecture
 
-Static single-page interactive website for the CIR4FUN technology architecture (WP3, WP4 and WP5).
+A responsive Next.js website for exploring the CIR4FUN WP3, WP4 and WP5 architecture.
 
-The architecture image is the visual canvas, with transparent clickable regions positioned over the components. Selecting a component opens its description and, where a dedicated Canva page has been provided, the corresponding Canva link and embedded view. Canva may restrict embedding; the external link is provided as a fallback.
-
-## Files
-- `index.html` — website, component descriptions, filters and clickable regions.
-- `assets/architecture.png` — updated CIR4FUN architecture image.
+## Features
+- Updated architecture artwork supplied for 18 November 2026.
+- Clickable component hotspots with descriptions and main functions.
+- Canva links for every component for which a link was supplied.
+- Components without a supplied Canva URL intentionally show no link.
+- Work-package filters, component search and zoom controls.
+- Responsive detail panel and links to the CIR4FUN website and GitHub repository.
 
 ## Run locally
-Open `index.html` in a browser. No dependencies or build step are required.
+```bash
+npm install
+npm run dev
+```
+Open http://localhost:3000.
+
+## Production build
+```bash
+npm run build
+npm start
+```
 
 ## Deploy to Vercel
-Push the contents of this folder to the connected GitHub repository and import/deploy it in Vercel. Use Framework Preset **Other**, leave Build Command and Install Command empty, and set Output Directory to `.`.
+1. Upload/commit the contents of this folder to the root of the connected GitHub repository.
+2. In Vercel, keep Framework Preset as **Next.js**.
+3. Set Root Directory to `./`.
+4. Build Command: `npm run build` (or leave the Next.js default).
+5. Install Command: `npm install` (or leave the default).
+6. Deploy.
+
+The architecture image is stored at `public/assets/cir4fun-architecture.png`.
+Component data and Canva URLs are stored in `data/components.json`.
